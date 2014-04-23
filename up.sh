@@ -38,7 +38,7 @@ up() {
 }
 
 _up_grep() {
-  cd $(echo -n $PWD | grep -Eio "^.*$1[^/]*")
+  cd "$(echo -n "$PWD" | grep -Eio "^.*$1[^/]*")"
 }
 
 _up_move() {
