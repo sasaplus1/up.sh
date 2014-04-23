@@ -56,5 +56,9 @@ _up_usage() {
   # CAUTION: do not delete tabs
   cat <<-USAGE >&2
 	Usage: up pattern
+	
+	  when pwd is /foo/bar/baz/qux/quux then:
+	    $ up 3   # cd to /foo/bar
+	    $ up az  # cd to /foo/bar/baz
 	USAGE
 }
