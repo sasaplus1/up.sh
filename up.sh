@@ -22,7 +22,7 @@
 
 up() {
   # arguments not found
-  [ "$#" -eq 0 ] && _up_usage
+  [ "$#" -eq 0 ] && _up_usage && return 1
 
   expr "$1" + 0 >/dev/null 2>&1
 
