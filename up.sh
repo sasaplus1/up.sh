@@ -20,7 +20,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-up() {
+_up() {
   # arguments not found
   [ "$#" -eq 0 ] && _up_usage && return 1
 
@@ -62,3 +62,5 @@ _up_usage() {
 	    $ up az  # cd to /foo/bar/baz
 	USAGE
 }
+
+alias ${_UP_CMD:-up}='_up'
