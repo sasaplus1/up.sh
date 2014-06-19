@@ -1,6 +1,6 @@
 # up.sh
 
-jump from current dir
+jump to parent dir
 
 ## Installation
 
@@ -12,6 +12,8 @@ append to your `.bashrc` or `.bash_profile` the following:
 
 ## Usage
 
+### use number
+
 ```sh
 $ pwd
 /foo/bar/baz/qux/quux
@@ -19,6 +21,8 @@ $ up 3
 $ pwd
 /foo/bar
 ```
+
+### use grep
 
 ```sh
 $ pwd
